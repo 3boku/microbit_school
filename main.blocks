@@ -1,7 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="M`H)@9F=Nk!kpaQEduC3" x="0" y="0"><statement name="HANDLER"><block type="typescript_statement" id="LPpPM^TTd4ge^Vdg(mYl" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="input.isGesture(Gesture.Shake)" numlines="1"></mutation></block></statement></block><block type="device_gesture_event" id="U:yRmHEv*r{mX$U.J#EX" x="466" y="-21"><field name="NAME">Gesture.TiltLeft</field><statement name="HANDLER"><block type="device_show_leds" id="[f[SbX_tw,X0)~pp,*|,"><field name="LEDS">`
-        . . # . . 
-        . # . . . 
-        # # # # # 
-        . # . . . 
-        . . # . .
-        `</field></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="3-r(EP#QDMYn7Pb5JK`7" x="0" y="0"></block><block type="pxt-on-start" id="$J#2^.:g)xygjWFih7mL" x="69" y="215"><statement name="HANDLER"><block type="typescript_statement" id="+OBrYJa(k7!@nN.1Xk[Q" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="input.isGesture(Gesture.Shake)" numlines="1"></mutation><next><block type="typescript_statement" id="skIKk|COHejgFxf-XC.W" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="input.isGesture(Gesture.Shake)" numlines="1"></mutation></block></next></block></statement></block></xml>
