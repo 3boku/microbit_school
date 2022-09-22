@@ -1,54 +1,20 @@
-input.onButtonPressed(Button.A, function () {
-	
+input.onGesture(Gesture.TiltLeft, function on_gesture_tilt_left() {
+    basic.showLeds(`
+        . . # . .
+                . # . . .
+                # # # # #
+                . # . . .
+                . . # . .
+    `)
 })
-input.onButtonPressed(Button.B, function () {
-	
+input.onGesture(Gesture.TiltRight, function on_gesture_tilt_right() {
+    basic.showLeds(`
+                . . # . .
+                . . . # .
+                # # # # #
+                . . . # .
+                . . # . .
+    `)
 })
-basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
-        basic.showLeds(`
-            # . . . #
-            # . . # .
-            # # # . .
-            # . . # .
-            # . . . #
-            `)
-        basic.showLeds(`
-            . # # # .
-            . . # . .
-            . . # . .
-            . . # . .
-            . # # # .
-            `)
-        basic.showLeds(`
-            # . . . #
-            # # . . #
-            # . # . #
-            # . . # #
-            # . . . #
-            `)
-        basic.showLeds(`
-            . # # # .
-            # . . . .
-            # . # # .
-            # . . . #
-            . # # # .
-            `)
-    } else if (input.buttonIsPressed(Button.B)) {
-        basic.showLeds(`
-            . # # # .
-            # . . . .
-            # . # # .
-            # . . . #
-            . # # # .
-            `)
-    } else {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
-    }
-})
+input.isGesture(Gesture.Shake)
+input.isGesture(Gesture.Shake)
